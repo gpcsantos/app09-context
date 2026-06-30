@@ -1,6 +1,8 @@
 import { Route, Routes } from "react-router-dom";
 import { useEffect, useState } from "react";
 
+import { TestProvider } from "./contexts/TestProvider";
+
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import Home from "./pages/Home/Home";
@@ -28,7 +30,7 @@ function App() {
   }, []);
 
   return (
-    <>
+    <TestProvider>
       <Header title="Context" navigationLinks={menu} loading={loading} />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -37,7 +39,7 @@ function App() {
       </Routes>
 
       <Footer />
-    </>
+    </TestProvider>
   );
 }
 
