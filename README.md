@@ -15,3 +15,8 @@ Branch main se destina aos alunos, com um projeto minino de exemplo.
 ### Pasta Data
 
 - db.json
+
+# Para rodar o projeto
+
+- yarn - instala dependencias
+- yarn start - inicia o Vite (porta padrão) e o JSON server (porta 3000)
